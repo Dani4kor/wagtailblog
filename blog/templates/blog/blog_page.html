@@ -7,7 +7,7 @@
         <body>
             <h1>{{ page.title }}</h1> {{ page.body|richtext }} {% endblock %} {% block pager %}
             <ul class="pager">
-                <li class="Home"><a href="/blog">Home</a></li>
+                <li class="Home"><a href="/blog">More</a></li>
             </ul>
             {% endblock %} {% block disqus %}
             <div id="disqus_thread">
@@ -26,12 +26,12 @@
                 (function() { // DON'T EDIT BELOW THIS LINE
                     var d = document,
                         s = d.createElement('script');
-                    s.src = '//DISQUSNAME.disqus.com/embed.js'; //change DISQUSNAME
+                    s.src = '//it4humans.disqus.com/embed.js'; //change DISQUSNAME
                     s.setAttribute('data-timestamp', +new Date());
                     (d.head || d.body).appendChild(s);
                 })();
-                </script>
+                </script> it4humans
                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                <script id="dsq-count-scr" src="//DISQUSNAME.disqus.com/count.js"  async></script>
+                <script id="dsq-count-scr" src="//it4humans.disqus.com/count.js"  async></script>
             </div>
             {% endblock %}
